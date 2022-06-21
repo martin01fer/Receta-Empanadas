@@ -1,0 +1,70 @@
+.logo img{
+    vertical-align: top;
+    width: 140px;
+ }
+ .logo a{
+     line-height: 75px;
+     font-size: 30px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-weight: bold;
+ }
+ header{
+     display: flex;
+     justify-content: space-between;
+ }
+ nav ul{
+     list-style: none;
+     padding: 0;
+ }
+ .menu li{
+     line-height: 2rem;
+     position: relative;
+ }
+ .menu ul{
+     position: absolute;
+ }
+ .menu a{
+     display: block;
+     color: #ddd;
+     text-decoration: none;
+     padding: 0 2em;
+     border: 2px solid #ccc;
+    transition: 0.5s;
+    
+ }
+ .menu a:hover{
+     background-color: rgb(0, 0, 0, 0.5);
+ }
+ .menu {
+     background-color: #333;
+     display: table;
+     width: 100%;
+ }
+ .menu > li{
+     float: left;
+ }
+ .menu li li{
+     background-color: rgb(0, 128, 0);
+     width: 200px;
+     max-height: 0px;
+     overflow: hidden;
+     transition: .5s;  
+    
+ }
+ .menu li:hover >ul >li{
+     max-height: 500px;
+     overflow: visible;
+ }
+ .menu > li > li{
+     top: 100%;
+    
+ }
+ .menu ul ul{
+     top: 0px;
+     left: 100%;
+ }
+ .menu li li li  a{
+    background-color: #222;
+    width: 150px;
+   
+ }

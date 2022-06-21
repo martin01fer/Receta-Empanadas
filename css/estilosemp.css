@@ -1,0 +1,176 @@
+ body{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        img{
+            max-width: 100%;
+        }
+        h1{
+            font-size: 70px;
+            font-family: Orelega One;
+            color: rgb(72, 72, 167);
+            position: absolute; 
+            top: 20px;
+            left:220px;
+            text-shadow: 5px 7px 5px rgb(175, 159, 145);
+        }
+        .nav-post ul{
+            list-style: none;
+            display: flex;
+            margin-left: 10px;
+        }
+        .nav-post ul a{
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: dimgray;
+            color: white;
+           
+        }
+        .nav-post ul a:hover{
+            background-color: #ccc;
+            color: black;
+            transition: .5s;
+        }
+        .menu ul{
+           display: flex;           
+           background-color: rgb(226, 66, 66);
+           padding: 10px;
+           list-style: none;
+           border-radius: 20px;
+           border-top: 5px groove rgb(226, 21, 21); 
+           border-left: 5px groove rgb(226, 21, 21);          
+        }
+        .menu ul a{
+            text-decoration: none;
+            padding: 5px 20px;
+            color: white;
+            border-radius: 5px;
+        }
+        .menu ul:hover{
+            background-color: rgba(138, 17, 98, 0.5);
+            border-top: 5px groove rgb(138, 17, 98); 
+            border-left: 5px groove rgb(138, 17, 98);
+            box-shadow: 5px 7px 10px rgb(126, 111, 111);
+          
+        }
+        .menu ul a:hover{
+            background-color: rgba(138, 17, 98, 0.3);
+            transition: 0.5s;
+        }
+        .menu ul:active{
+            border: none;
+            box-shadow: none;
+            background-color: rgb(138, 17, 98, 0.8);
+        }
+        .menu ul a:active{           
+            color: black;           
+        }
+        header{
+            display: flex;
+            justify-content: space-between;        
+            flex-wrap: wrap;
+            /*position: fixed;*/
+         }
+         h2{
+             background-color: rgba(210, 105, 30, 0.2) ;
+             text-align: center; 
+             padding-top: 10px;
+             padding-bottom: 10px;
+             border-top: 4px solid brown;           
+         }
+         article{
+             padding-left: 20px;
+         }
+         .container{
+             display: flex;
+             flex-direction: row;
+             flex-wrap: wrap;
+         }
+         .container h3{
+            background-color: #ccc; 
+            width: 200px;
+             text-align:center;
+         }
+         .container h2{
+            background-color: #ccc;
+             width: 500px; 
+             text-align: center;
+         }
+         section ul{
+             list-style: circle;
+         }
+         .cuerpo{
+             max-width: 100%;
+             width: 68%;
+             padding-right: 20px;
+         }
+          .banner{
+            width: 60%;
+        }
+        .container .cuerpo img{
+           width: 100%;
+        }
+         aside{
+             display: flex;
+             flex-direction: column;
+             width: 30%;             
+         }
+         aside .wiguet h3{
+             color: brown;
+             background-color: #ccc;
+             text-align: center;
+         }
+         aside .wiguet p{
+             background-color: chocolate;
+             color: white;
+             padding: 10px;
+         }
+         .Link_ini{
+             display: inline-block;
+             padding: 10px;
+             background-color: blue;
+             opacity: 0.7;
+             color: white;
+             text-decoration: none;
+             position: fixed;
+             border-radius: 30px;
+         } 
+         aside .wiguet .formu{
+             display: flex;
+             flex-direction: column;
+             flex-wrap: wrap;
+             align-content:space-around;                                                    
+            margin-bottom: 5px;
+             
+         }
+         @media (max-width: 960px) {
+             .container{
+               flex-direction: column;            
+             }
+             .banner{
+                 width: 100%;
+             }
+             .container .cuerpo img{
+                width: 80%;
+             }
+             aside .wiguet{
+                 width: 22%;
+                 padding: 10px;
+             }
+             aside{
+               flex-direction:row;
+               flex-wrap: wrap;
+               width: 100%;             
+             }            
+        }
+        @media (max-width: 660px){
+        aside .wiguet{
+                 width: 100%;                 
+             }
+              .banners{
+                width: 100%;
+            }
+            .container .cuerpo img{
+               width: 100%;
+             }
+        }
